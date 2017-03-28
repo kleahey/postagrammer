@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  #Create the resources route for the posts controller
+  resources :posts
+
+  #Set the index action in the PostsController to be the root route
+  root 'posts#index'
+
 end
