@@ -54,3 +54,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #Paperclip is for active record file attachment management
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+
+#Simple Form for forms
+gem "simple_form"

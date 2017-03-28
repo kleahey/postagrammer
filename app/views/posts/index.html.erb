@@ -1,1 +1,10 @@
 <h1>Postagrammer</h1>
+
+<tbody>
+  <tr>
+    <% @posts.each do |post| %>
+    <%= image_tag post.image.url(:medium) %>
+    <%= post.caption %>
+    <% end %>
+  </tr>
+</tbody>
