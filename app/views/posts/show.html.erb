@@ -1,5 +1,4 @@
 <div class="posts-wrapper row">
-  <% @posts.reverse_each do |post| %>
     <div class="post">
       <div class="post-head">
         <div class="name">
@@ -7,11 +6,10 @@
         </div>
       </div>
         <div class="image center-block">
-          <%= link_to (image_tag post.image.url(:medium), class:'img-responsive'), post_path(post) %>
+          <%= image_tag @post.image.url(:medium), class:'img-responsive' %>
         </div>
         <div class="caption">
-          <%= post.caption %>
+          <%= @post.caption %>
         </div>
     </div>
-  <% end %>
 </div>
