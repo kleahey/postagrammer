@@ -1,14 +1,17 @@
-<h1>Postagrammer</h1>
-
-<table>
-  <tbody>
-    <% @posts.each do |post| %></td>
-      <tr>
-        <td><%= image_tag post.image.url(:medium) %></td>
-      </tr>
-      <tr>
-        <td><%= post.caption %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="posts-wrapper row">
+  <% @posts.reverse_each do |post| %>
+    <div class="post">
+      <div class="post-head">
+        <div class="name">
+          Kevin Leahey
+        </div>
+      </div>
+        <div class="image center-block">
+          <%= image_tag post.image.url(:medium), class:'img-responsive' %>
+        </div>
+        <div class="caption">
+          <%= post.caption %>
+        </div>
+    </div>
+  <% end %>
+</div>

@@ -57,3 +57,12 @@ gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 #Simple Form for forms
 gem "simple_form"
+
+#Add Bootstrap 4 for styling
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+
+#Tooltips and popovers in Bootstrap 4 require tether for postitioning
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
