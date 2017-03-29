@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   #Set the index action in the PostsController to be the root route
   root 'posts#index'
 
+  resources :posts do
+    resources :comments
+  end
+
 end
