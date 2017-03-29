@@ -69,3 +69,6 @@ end
 
 #Authentication with Devise
 gem 'devise'
+
+#Font-Awesome
+gem 'font-awesome-sass'
