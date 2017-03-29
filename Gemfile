@@ -71,4 +71,4 @@ end
 gem 'devise'
 
 #Font-Awesome
-gem 'font-awesome-sass'
+gem 'font-awesome-rails'
