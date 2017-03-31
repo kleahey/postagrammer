@@ -76,3 +76,6 @@ gem 'font-awesome-rails'
 
 #Preparation for deployment on Heroku
 gem 'rails_12factor'
+
+#AWS gem for storing images uploaded with Paperclip
+gem 'aws-sdk', '>= 2.3'
