@@ -17,7 +17,7 @@
 @import "bootstrap";
 
 body {
-  background-color: #fafafa;
+  background-color: #fafafa; 
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
@@ -166,6 +166,21 @@ html {
   height: 100%;
 }
 
+#background-login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('pic.jpg') no-repeat;
+  background-size: cover;
+}
+
 .registration-bg {
   padding-top: 5em;
   background-image: image-url('pic.jpg');
@@ -195,4 +210,10 @@ html {
 
 .alert {
   margin-bottom: 0px;
+}
+
+.form-control {
+  .no-border {
+    border: 0;
+  }
 }

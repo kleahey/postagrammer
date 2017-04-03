@@ -40,7 +40,9 @@
           </div>
           <div class="comment-form col-sm-11">
             <%= form_for [post, post.comments.new] do |f| %>
-              <%= f.text_field :content, placeholder: 'Add a comment...' %>
+              <div class="col-md-*">
+              <%= f.text_field :content, placeholder: 'Add a comment...', class: "form-control no-border" %>
+              </div>
             <% end %>
           </div>
         </div>
